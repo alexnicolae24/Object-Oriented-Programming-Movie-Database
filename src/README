@@ -1,0 +1,26 @@
+Tema-VideosDB
+Autor:Nicolae Alexandru-Dimitrie 321CD
+
+    Am creat un pachet actions in care am implementat clasele ce m-au ajutat sa satisfac conditiile pentru efectuarea
+fiecarei actiuni:
+                - ActionsDoer - ajuta la realizarea entry-pointului adaugat in Main,scrie datele in fisierele result
+                - CommandDoer - clasa singleton care ajuta la executia unei comenzi
+                - QuerybyActors----------------|
+                - QuerybyShows                 |----clase ce realizeaza query-uri in functie de modalitatile cerute
+                - QuerybyUsers-----------------|
+                - QueryDoer - clasa singleton care ajuta la executia unui query
+                - RecommendationDoer - clasa singleton care ajuta la executia unui recomandari
+
+    Am creat un pachet data in care am replicat clasele prezente in pachetul fileio,efectuand modificarile necesar,pentru
+a implementa tema(am adaugat campuri de tip average si metode necesare pentru a calcula valorile medii).
+
+    Am creat un pachet database in care am implementat clasele:
+    - Comp - este o clasa singleton care retine toti comparatorii necesari de-a lungul temei
+    - Find - este o clasa ce a ajutat la implementarea metodelor de sortare si cautare pentru clasele din pachetul actions
+
+    In pachetul entertainment,am creat 2 clase:
+    -Seasonmodified - ce este o replica a clasei Season,la care am adaugat campuri si metode pentru calcularea ratingului mediu
+    -ShowType - este o clasa ce face legatura dintre genul/tipul unui show si numarul de vizionari
+
+    Am utilizat clase de tip singleton,deoarece ofera un punct de acces global al acestor clase de-a lungul temei si face implementarea
+mai facila.
